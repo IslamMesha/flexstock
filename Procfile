@@ -1,1 +1,1 @@
-web: gunicorn ayendrive.wsgi
+web: gunicorn flexstock.wsgi

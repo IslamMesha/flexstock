@@ -130,9 +130,6 @@ dmypy.json
 
 .idea/
 
-*/migrations/0001_initial.py
-*/migrations/0002_auto_20210112_1933.py
-
 /media/*
 
 .idea/*

@@ -11,6 +11,9 @@ https://docs.djangoproject.com/en/3.1/ref/settings/
 """
 import os
 from pathlib import Path
+
+import django_heroku
+
 from myshopify.shopify_settings import *
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -129,3 +132,6 @@ CELERY_ACCEPT_CONTENT = ['application/json']
 CELERY_TASK_SERIALIZER = 'json'
 CELERY_RESULT_SERIALIZER = 'json'
 CELERY_TIMEZONE = 'Africa/Cairo'
+
+# Activate Django-Heroku.
+django_heroku.settings(locals())
